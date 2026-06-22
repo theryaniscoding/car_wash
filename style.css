@@ -532,6 +532,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+  grid-auto-rows: 160px;
 }
 
 @media (min-width: 700px) {
