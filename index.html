@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail & Drive — Mobile Car Wash</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Detail&amp;Drive</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#why" class="nav__link">Why Us</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#area" class="nav__link">Service Area</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- REPLACE: swap this div for an <img> tag with a real car wash photo -->
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__bg-placeholder">
+        <!-- Replace this div with: <img src="images/hero-car.jpg" alt="Freshly washed car" class="hero__bg-img" /> -->
+      </div>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow">Mobile Car Wash · Comes to You</span>
+      <h1 class="hero__headline">A&nbsp;clean car,<br /><em>at your door.</em></h1>
+      <p class="hero__sub">
+        Premium hand wash and ceramic-soap detail — no appointment, no waiting.
+        We pull up with everything we need.
+      </p>
+      <a href="tel:3104282132" class="btn btn--primary">Call or Text Now &rarr;</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <p class="section__eyebrow">Simple Pricing</p>
+      <h2 class="section__title">No hidden fees.<br />No surprises.</h2>
+      <div class="pricing__grid">
+
+        <div class="pricing__card">
+          <div class="pricing__icon" aria-hidden="true">🚗</div>
+          <h3 class="pricing__label">Sedan</h3>
+          <div class="pricing__price">$15</div>
+          <ul class="pricing__features">
+            <li>Full exterior hand wash</li>
+            <li>Ceramic-formula soap</li>
+            <li>Microfiber dry finish</li>
+            <li>Wheel &amp; tire rinse</li>
+          </ul>
+          <a href="tel:3104282132" class="btn btn--outline">Book a Sedan</a>
+        </div>
+
+        <div class="pricing__card pricing__card--featured">
+          <span class="pricing__badge">Most Popular</span>
+          <div class="pricing__icon" aria-hidden="true">🛻</div>
+          <h3 class="pricing__label">SUV / Truck</h3>
+          <div class="pricing__price">$20</div>
+          <ul class="pricing__features">
+            <li>Full exterior hand wash</li>
+            <li>Ceramic-formula soap</li>
+            <li>Microfiber dry finish</li>
+            <li>Wheel, tire &amp; running board rinse</li>
+          </ul>
+          <a href="tel:3104282132" class="btn btn--primary">Book an SUV</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <p class="section__eyebrow">Why Detail &amp; Drive</p>
+      <h2 class="section__title">The way a car wash<br />should feel.</h2>
+      <div class="why__grid">
+
+        <div class="why__card">
+          <div class="why__icon" aria-hidden="true">📍</div>
+          <h3 class="why__heading">We come to you</h3>
+          <p class="why__body">No driving to a car wash lane, no waiting in queue. We show up at your driveway or parking spot — you keep doing your thing.</p>
+        </div>
+
+        <div class="why__card">
+          <div class="why__icon" aria-hidden="true">💧</div>
+          <h3 class="why__heading">Ceramic-soap clean</h3>
+          <p class="why__body">We use a ceramic-coating formula soap and microfiber towels — the same products favored by professional detailers, at a fraction of the price.</p>
+        </div>
+
+        <div class="why__card">
+          <div class="why__icon" aria-hidden="true">💵</div>
+          <h3 class="why__heading">Honest pricing</h3>
+          <p class="why__body">$15 for sedans, $20 for SUVs and trucks. That's it. We believe quality car care shouldn't cost a small fortune.</p>
+        </div>
+
+        <div class="why__card">
+          <div class="why__icon" aria-hidden="true">🤝</div>
+          <h3 class="why__heading">Friendly &amp; local</h3>
+          <p class="why__body">We're your neighbors — not a franchise. Every wash gets our full attention because our reputation is built one car at a time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <p class="section__eyebrow">Our Work</p>
+      <h2 class="section__title">Results speak<br />for themselves.</h2>
+      <div class="gallery__grid">
+
+        <!-- REPLACE: each .gallery__item div with a real photo -->
+        <!-- Example: <img src="images/wash-01.jpg" alt="Black sedan after wash" class="gallery__img" /> -->
+
+        <div class="gallery__item gallery__item--tall">
+          <div class="gallery__placeholder">📸 Replace with photo</div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder">📸 Replace with photo</div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder">📸 Replace with photo</div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <div class="gallery__placeholder">📸 Replace with photo</div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder">📸 Replace with photo</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICE AREA ========== -->
+  <section class="section area" id="area">
+    <div class="container area__inner">
+      <div class="area__text">
+        <p class="section__eyebrow">Where We Operate</p>
+        <h2 class="section__title">Right in your<br />neighborhood.</h2>
+        <p class="area__body">
+          We serve local neighborhoods and surrounding areas — apartment complexes,
+          driveways, parking lots, and beyond. If you're not sure whether we
+          cover your street, just text us and we'll let you know.
+        </p>
+        <a href="sms:3104282132" class="btn btn--primary">Text to Check Your Area</a>
+      </div>
+      <div class="area__visual" aria-hidden="true">
+        <!-- REPLACE: swap this for a real neighborhood map screenshot or photo -->
+        <div class="area__map-placeholder">
+          <span>📍</span>
+          <p>Your neighborhood</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <p class="section__eyebrow">Get in Touch</p>
+      <h2 class="section__title">Ready for a clean car?</h2>
+      <div class="contact__phone">310-428-2132</div>
+      <div class="contact__btns">
+        <a href="tel:3104282132" class="btn btn--primary">📞 Call Now</a>
+        <a href="sms:3104282132" class="btn btn--outline">💬 Send a Text</a>
+      </div>
+
+      <div class="contact__divider"><span>or leave a message</span></div>
+
+      <!-- Simple contact form — no backend needed, opens default mail client -->
+      <form class="contact__form" id="contactForm">
+        <div class="form__row">
+          <label class="form__label" for="name">Your name</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Alex Rivera" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="phone">Phone number</label>
+          <input class="form__input" type="tel" id="phone" name="phone" placeholder="(310) 000-0000" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="vehicle">Vehicle type</label>
+          <select class="form__input" id="vehicle" name="vehicle">
+            <option value="sedan">Sedan — $15</option>
+            <option value="suv">SUV / Truck — $20</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="message">Anything else?</label>
+          <textarea class="form__input form__textarea" id="message" name="message" placeholder="Your address, preferred time, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="form__note">We'll text you back as soon as possible.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Detail&amp;Drive</span>
+        <p class="footer__tagline">Mobile Car Wash · Comes to You</p>
+      </div>
+      <div class="footer__contact">
+        <a href="tel:3104282132" class="footer__phone">310-428-2132</a>
+        <div class="footer__links">
+          <a href="tel:3104282132">Call</a>
+          <a href="sms:3104282132">Text</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Detail &amp; Drive. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
