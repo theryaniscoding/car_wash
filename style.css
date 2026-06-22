@@ -598,25 +598,14 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   justify-content: center;
 }
 
-.area__map-placeholder {
+.area__map-img {
   width: 100%;
   max-width: 380px;
   aspect-ratio: 4 / 3;
-  background: var(--cream-dk);
   border-radius: var(--radius-lg);
-  border: 2px dashed var(--sand);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--text-muted);
-  /* REPLACE: this div with <img src="images/service-area-map.jpg" alt="Service area map" style="border-radius: var(--radius-lg); width:100%;" /> */
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
 }
-
-.area__map-placeholder span { font-size: 2.5rem; }
-.area__map-placeholder p   { font-size: 0.85rem; }
-
 /* =============================================
    CONTACT
    ============================================= */
