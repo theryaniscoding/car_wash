@@ -126,21 +126,6 @@ function showConfirmation(name) {
   }, 5000);
 }
 
-function showConfirmation(name) {
-  const btn = form.querySelector('[type="submit"]');
-  const original = btn.textContent;
-
-  btn.textContent = `✓ Thanks ${name.split(' ')[0]}! Text us at 310-428-2132`;
-  btn.style.background = '#1a6650';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.style.background = '';
-    btn.disabled = false;
-  }, 5000);
-}
-
 // ---------- Smooth anchor fallback (for older browsers) ----------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
