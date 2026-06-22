@@ -1,5 +1,5 @@
 /* =============================================
-   Detail & Drive — script.js
+  Ryan Mobile Detailing — script.js
    ============================================= */
 
 // ---------- Footer year ----------
@@ -101,19 +101,6 @@ form.addEventListener('submit', e => {
   );
 
   window.location.href = `sms:+13104282132?body=${smsBody}`;
-});
-
-  // Open SMS on mobile, show a confirmation on desktop
-  const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    window.location.href = `sms:+3104282132?body=${smsBody}`;
-  } else {
-    // Desktop fallback: show confirmation and display the number
-    showConfirmation(name);
-  }
-
-  form.reset();
 });
 
 function showConfirmation(name) {
