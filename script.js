@@ -88,20 +88,26 @@ form.addEventListener('submit', e => {
   const vehicle = form.vehicle.value;
   const message = form.message.value.trim();
 
-  const vehicleLabel = vehicle === 'suv' ? 'SUV / Truck ($20)' : 'Sedan ($15)';
+  const vehicleLabel = vehicle === 'suv'
+    ? 'SUV / Truck ($20)'
+    : 'Sedan ($15)';
 
-  // Build a pre-filled SMS body to send to the business number
   const smsBody = encodeURIComponent(
-    `Hi, I'm ${name}. I'd like a wash for my ${vehicleLabel}.` +
-    (message ? ` ${message}` : '') +
-    ` My number is ${phone}.`
+    `🚗 New Car Wash Request\n` +
+    `Name: ${name}\n` +
+    `Phone: ${phone}\n` +
+    `Vehicle: ${vehicleLabel}\n` +
+    (message ? `Message: ${message}\n` : '')
   );
+
+  window.location.href = `sms:+13104282132?body=${smsBody}`;
+});
 
   // Open SMS on mobile, show a confirmation on desktop
   const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
 
   if (isMobile) {
-    window.location.href = `sms:3104282132?body=${smsBody}`;
+    window.location.href = `sms:+3104282132?body=${smsBody}`;
   } else {
     // Desktop fallback: show confirmation and display the number
     showConfirmation(name);
