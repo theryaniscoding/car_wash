@@ -382,6 +382,15 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   margin-inline: auto;
 }
 
+.pricing__note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: -20px auto 30px;
+  line-height: 1.5;
+}
+
 @media (min-width: 560px) {
   .pricing__grid {
     grid-template-columns: 1fr 1fr;
