@@ -400,6 +400,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .pricing__card {
+  position: relative;
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: 36px 28px;
