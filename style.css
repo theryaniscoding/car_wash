@@ -113,6 +113,18 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   transform: translateY(-2px);
 }
 
+.btn--outline--white {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn--outline--white:hover {
+  background: var(--white);
+  color: var(--forest);
+  transform: translateY(-2px);
+}
+
 .btn--full { width: 100%; }
 
 /* =============================================
