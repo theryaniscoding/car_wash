@@ -385,7 +385,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .pricing__note {
   text-align: center;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: #3C4142;
   max-width: 600px;
   margin: 10px auto 40px; /* 👈 pushes it down/up properly */
   line-height: 1.5;
