@@ -102,14 +102,14 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   transform: translateY(-2px);
 }
 
-.btn--outline {
+..btn--outline {
   background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white) !important;
+  color: var(--forest);
+  border: 2px solid var(--forest);
 }
 .btn--outline:hover {
-  background: var(--white);
-  color: var(--forest);
+  background: var(--forest);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
