@@ -846,3 +846,14 @@ select.form__input option { background: var(--forest); }
   }
   .fade-up { opacity: 1; transform: none; }
 }
+.btn--outline-white {
+  background: transparent !important;
+  color: var(--white) !important;
+  border: 2px solid var(--white) !important;
+}
+
+.btn--outline-white:hover {
+  background: var(--white) !important;
+  color: var(--forest) !important;
+  transform: translateY(-2px);
+}
